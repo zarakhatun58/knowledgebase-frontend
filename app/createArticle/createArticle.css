@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Create Article page specific styles */
+.create-article-container {
+  min-height: 100vh;
+  background: hsl(var(--background));
+}
+
+.create-article-main {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.create-article-header {
+  margin-bottom: 2rem;
+}
+
+.create-article-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.create-article-subtitle {
+  color: hsl(var(--muted-foreground));
+}
+
+.create-article-card {
+  box-shadow: var(--knowledge-shadow);
+}
+
+.create-article-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.create-article-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.create-article-title-input {
+  font-size: 1.125rem;
+}
+
+.create-article-textarea {
+  min-height: 300px;
+  resize: none;
+}
+
+.create-article-char-count {
+  text-align: right;
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.create-article-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.create-article-existing-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.create-article-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.create-article-tag-remove {
+  margin-left: 0.25rem;
+  padding: 0.125rem;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.create-article-tag-remove:hover {
+  background-color: hsl(var(--destructive) / 0.2);
+}
+
+.create-article-tag-input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.create-article-tag-input {
+  flex: 1;
+}
+
+.create-article-tag-help {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.create-article-actions {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid hsl(var(--border));
+}
+
+.create-article-save-btn {
+  background: var(--knowledge-gradient);
+  flex: 1;
+}
+
+.create-article-save-btn:hover {
+  opacity: 0.9;
+}
+
+.create-article-cancel-btn {
+  flex: 1;
+}
+
+.create-article-preview {
+  margin-top: 2rem;
+  box-shadow: var(--knowledge-shadow);
+}
+
+.create-article-preview-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.create-article-preview-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.create-article-preview-content {
+  max-width: none;
+}
+
+.create-article-preview-text {
+  color: hsl(var(--muted-foreground));
+  white-space: pre-wrap;
+}
+
+@media (min-width: 640px) {
+  .create-article-actions {
+    flex-direction: row;
+  }
+
+  .create-article-save-btn,
+  .create-article-cancel-btn {
+    flex: none;
+  }
+}
